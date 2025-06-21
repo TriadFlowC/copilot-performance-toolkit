@@ -4,6 +4,12 @@
 
 This guide translates the deep theoretical analysis of AI code assistant scaling into practical, actionable strategies for developers. It explains **why** the problems occur and **how** to solve them effectively.
 
+## Methodology
+- **Data Collection**: Synthesis of theoretical analysis findings with practical testing observations across different repository sizes
+- **Analysis Method**: Translation of computational complexity theory into practical thresholds and recommendations, validated through observational patterns
+- **Limitations**: Practical recommendations based on limited testing environments; actual results may vary based on specific project characteristics and hardware
+- **Confidence Level**: Medium - Practical guidance based on solid theoretical foundation and observational support, but individual results may vary
+
 ## The Theory-Practice Bridge
 
 ### Understanding the Root Cause
