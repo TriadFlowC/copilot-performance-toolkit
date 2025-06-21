@@ -183,13 +183,24 @@ Based on theoretical reasoning and observations, workspace splitting *might* hel
 
 *Important: These are theoretical expectations based on reasoning, not validated results. Actual performance improvements will vary significantly based on individual project characteristics, system configuration, and usage patterns. See [DISCLAIMER.md](DISCLAIMER.md) for important information about the speculative nature of these claims.*
 
-## 🤝 Contributing
+## 🤝 Community and Contributions
 
-This project welcomes contributions in several areas:
+### Contributing
+We welcome community contributions! Please see our [Contributing Guidelines](CONTRIBUTING.md) for detailed information on:
 - **Tool improvements**: Enhanced algorithms, better UI, additional features
-- **Theoretical research**: New mathematical models, complexity analysis
-- **Empirical validation**: Testing on different codebases and scenarios
+- **Performance feedback**: Share your results using our [issue templates](.github/ISSUE_TEMPLATE/)
+- **Community validation**: Help validate theoretical claims through testing
 - **Documentation**: Improved guides, examples, and explanations
+
+### Feedback and Support
+- **📊 [Share Your Results](COMMUNITY_SURVEY.md)**: Help us improve by sharing your toolkit experiences
+- **🐛 [Report Issues](.github/ISSUE_TEMPLATE/bug-report.md)**: Report bugs or problems with the tools
+- **💡 [Request Features](.github/ISSUE_TEMPLATE/feature-request.md)**: Suggest new monitoring capabilities
+- **📈 [Performance Reports](.github/ISSUE_TEMPLATE/performance-report.md)**: Share your performance observations
+- **💬 [Join Discussions](https://github.com/TriadFlowC/copilot-performance-toolkit/discussions)**: Community support and collaboration
+
+### Effectiveness Metrics
+We measure toolkit effectiveness through community feedback and usage patterns. See [METRICS.md](METRICS.md) for details on how we evaluate tool utility and community impact.
 
 ## 📄 License
 
