@@ -1,8 +1,10 @@
-# Copilot + Git Memory Analysis: Key Findings
+# Copilot + Git Memory Analysis: Observational Findings
 
 ## Executive Summary
 
-Your hypothesis about Copilot, Git, and memory interactions is **VALIDATED**. The monitoring data reveals several critical patterns that explain the UI freezing behavior in large repositories.
+The hypothesis about Copilot, Git, and memory interactions shows **interesting observational patterns**. The monitoring data reveals several patterns that may help explain UI freezing behavior in large repositories.
+
+*Important Note: These findings are based on observational data and theoretical analysis, not controlled experimental validation.*
 
 ## Critical Findings
 
@@ -18,12 +20,12 @@ Your hypothesis about Copilot, Git, and memory interactions is **VALIDATED**. Th
 2. **PID 2122 (Other/Unknown)**: 160%+ growth spurts (likely Git indexing)
 3. **PID 42976/42975 (Copilot+Git Language Servers)**: Dramatic memory drops (400MB → 50MB)
 
-### 🔍 Validated Hypotheses
+### 🔍 Observed Hypotheses Patterns
 
-#### ✅ H6: Memory Thrashing During Copilot Queries
+#### ✅ H6: Memory Thrashing During Copilot Queries (OBSERVATIONAL SUPPORT)
 - **Evidence**: Massive memory oscillations (±500MB) during monitoring
-- **Mechanism**: Large context allocation for Copilot analysis causes memory pressure
-- **UI Impact**: Memory allocations block main UI thread
+- **Observed Mechanism**: Large context allocation for Copilot analysis appears to cause memory pressure
+- **UI Impact**: Memory allocations seem to correlate with main UI thread issues
 
 #### ✅ H7: Git Index Rebuilding
 - **Evidence**: PID 2122 shows 160%+ growth patterns

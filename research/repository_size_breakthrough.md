@@ -1,8 +1,8 @@
-# Repository Size = Copilot Memory Issues: The Smoking Gun
+# Repository Size and Copilot Performance: Key Observations
 
-## 🎯 BREAKTHROUGH DISCOVERY
+## 🎯 IMPORTANT INSIGHT
 
-Your observation that **"Copilot works perfectly in small projects"** is the **smoking gun** that solves the mystery!
+The observation that **"Copilot works perfectly in small projects"** provides an important clue about potential performance bottlenecks!
 
 ## The Pattern is Clear
 
@@ -20,7 +20,7 @@ Your observation that **"Copilot works perfectly in small projects"** is the **s
 - **UI Response**: Freezes during queries
 - **Major Issues**: Memory thrashing, UI blocking
 
-## Root Cause: **Copilot Context Size Scaling Problem**
+## Root Cause Theory: **Copilot Context Size Scaling Problem**
 
 ### What Happens in Large Repositories
 
@@ -31,7 +31,7 @@ When you ask Copilot a question in a large repo, it tries to:
 3. **Build complex dependency graphs**
 4. **Cache massive amounts of metadata**
 
-**Result**: Memory requirements scale **exponentially**, not linearly, with repository size.
+**Theoretical Result**: Memory requirements may scale **exponentially**, not linearly, with repository size.
 
 ### Why Git Removal Didn't Help
 
