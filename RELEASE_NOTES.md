@@ -61,18 +61,15 @@ This toolkit is built on rigorous computer science principles:
 - **Attention Mechanisms**: Transformer architecture limitations  
 - **Cognitive Science**: Working memory constraints in AI systems
 
-## 🔬 Validation
+## 🔬 Theoretical Foundation
 
-**Empirically tested on:**
-- 15+ repositories ranging from 50 to 10,000+ files
-- Multiple programming languages (TypeScript, Python, Java, Go, Rust)
-- Various frameworks (React, Next.js, Django, Express, Spring)
-- Different team sizes and development workflows
+**Based on computer science principles and observations:**
+- **O(n²) complexity reasoning** about AI context management
+- **Performance threshold hypotheses** based on observed patterns
+- **Workspace splitting theoretical analysis** using established complexity theory
+- **Memory usage patterns** based on general system behavior
 
-**Theoretically proven:**
-- Mathematical complexity analysis with formal proofs
-- Information-theoretic bounds on context compression
-- Cognitive load theory applications to AI systems
+**Important Note**: These are theoretical applications of computer science principles, not empirical research findings.
 
 ## 🤝 Community Impact
 
