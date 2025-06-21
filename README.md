@@ -1,16 +1,20 @@
 # Copilot Performance Toolkit
 
-A comprehensive toolkit for analyzing, understanding, and optimizing GitHub Copilot performance in large codebases. This project provides both theoretical foundations and practical tools to solve AI code assistant scaling issues.
+A practical toolkit for monitoring and potentially improving GitHub Copilot performance in large codebases. This project provides monitoring tools, workspace analysis utilities, and theoretical reasoning about AI code assistant performance.
 
-## 🎯 Problem Statement
+## ⚠️ Important Disclaimer
 
-GitHub Copilot and other AI code assistants face fundamental scaling limitations that cause:
-- **Exponential memory growth** as codebase size increases
-- **UI freezing** and poor responsiveness in large projects  
-- **Degraded suggestion quality** due to context dilution
-- **Performance issues** starting around 500-1000 files
+**This toolkit contains observations and theoretical speculation, NOT formal research.** Please see [DISCLAIMER.md](DISCLAIMER.md) for important information about the academic integrity of this content.
 
-This toolkit provides scientifically-backed solutions to these problems.
+## 🎯 Observed Problem
+
+Many developers experience performance issues with AI code assistants in large codebases:
+- **High memory usage** by VS Code in large projects
+- **UI freezing** and poor responsiveness
+- **Slower suggestion responses** or degraded quality
+- **Performance issues** that seem to correlate with project size
+
+This toolkit provides tools to monitor these issues and potential approaches to address them.
 
 ## 🚀 Quick Start
 
@@ -71,26 +75,25 @@ copilot-performance-toolkit/
 └── README.md                       # This file
 ```
 
-## 🔬 Key Findings
+## 🔬 Observations and Reasoning
 
-Our research has revealed fundamental theoretical limits:
+Based on practical experience and computer science principles, we observe:
 
-### The Scaling Problem
-- **Context relationships** grow as O(n²) where n = number of files
-- **Memory usage** grows super-linearly, often approaching O(n^1.5 to n^2)
-- **Performance degradation** follows predictable phase transitions
+### Performance Issues
+- **Memory usage** appears to grow with project size
+- **Response times** may slow down in larger codebases
+- **UI responsiveness** can degrade with many files open
 
-### Performance Thresholds
-- **0-200 files**: Green Zone - Optimal performance
-- **200-500 files**: Yellow Zone - Performance starts degrading  
-- **500-1000 files**: Orange Zone - Noticeable issues, workspace splitting recommended
-- **1000+ files**: Red Zone - Severe performance problems, immediate action required
+### Theoretical Reasoning
+- **Context management** likely becomes more complex with more files
+- **Memory allocation** for tracking file relationships may grow significantly
+- **Processing overhead** for analyzing large project structures
 
-### The Solution: Workspace Splitting
-Mathematical analysis proves workspace splitting is theoretically optimal:
-- **Reduces complexity** from O(n²) to O(n²/k) where k = number of workspaces
-- **Preserves 60-80%** of meaningful code relationships (local dependencies)
-- **Improves signal-to-noise ratio** in AI attention mechanisms
+### Potential Approach: Workspace Splitting
+Based on observations, splitting large projects into smaller workspaces may help by:
+- **Reducing scope** of files the AI needs to consider
+- **Lowering memory usage** by limiting active context
+- **Improving performance** through focused project boundaries
 
 ## 🛠️ Tools Overview
 
