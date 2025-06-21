@@ -4,6 +4,12 @@
 
 GitHub Copilot's performance degrades exponentially as repository size and complexity increase due to fundamental limitations in context management, memory allocation, and the computational complexity of understanding large codebases. This document explains the theoretical foundations of why Copilot struggles with large projects and how file count, complexity, and interconnectedness create a perfect storm of performance issues.
 
+## Methodology
+- **Data Collection**: Theoretical analysis based on transformer architecture principles, computational complexity theory, and known context window limitations
+- **Analysis Method**: Mathematical modeling of context relationships and complexity scaling, supported by architectural understanding of AI code assistants
+- **Limitations**: Theoretical framework without empirical validation; specific performance numbers are estimates based on complexity analysis
+- **Confidence Level**: High - Based on established computational complexity principles and known transformer architecture constraints
+
 ## The Context Window Problem
 
 ### What is Context Management?

@@ -10,6 +10,12 @@ After conducting extensive Git isolation testing (temporarily removing `.git` fo
 
 **Conclusion**: The memory issue is primarily **Copilot-driven**, not Git-driven.
 
+## Methodology
+- **Data Collection**: Controlled Git isolation testing (removing .git folder), extensive memory monitoring, and process behavior analysis
+- **Analysis Method**: Hypothesis elimination through controlled testing, comparative analysis of memory patterns with and without Git integration
+- **Limitations**: Testing conducted in specific development environment; results may vary across different setups; comprehensive validation requires broader testing
+- **Confidence Level**: Medium to High - Strong evidence from controlled Git isolation testing with consistent results, though broader validation needed
+
 ## 🎯 REVISED FOCUS: Copilot Context & Extension Host Memory
 
 ### Primary Suspects (Post-Git Isolation)
