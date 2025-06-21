@@ -128,9 +128,9 @@ Based on theoretical reasoning, splitting large projects into smaller workspaces
 - **[Deep Theory](docs/copilot_deep_theory.md)**: Comprehensive theoretical analysis using information theory, computational complexity, and cognitive science
 - **[Context Theory](docs/copilot_context_theory.md)**: Focused analysis of context management problems
 
-### Research Findings
-- **[Repository Size Breakthrough](research/repository_size_breakthrough.md)**: Key insight that repository size is the primary bottleneck
-- **[Memory Hypothesis](research/copilot_git_memory_hypothesis.md)**: Hypothesis testing and validation results
+### Key Observations
+- **[Repository Size Analysis](research/repository_size_breakthrough.md)**: Observations suggesting repository size as a primary bottleneck
+- **[Memory Hypothesis](research/copilot_git_memory_hypothesis.md)**: Hypothesis development and observational testing results
 
 ## 🎓 Theoretical Foundation
 
@@ -165,16 +165,16 @@ This toolkit provides:
 - **Hypothesis Formation**: Testable theories about performance issues
 - **Practical Utilities**: Tools to implement potential solutions
 
-## 🎯 Potential Results
+## 🎯 Theoretical Potential Results
 
-Based on theoretical reasoning, workspace splitting *might* help by:
-- **Reducing memory usage** by limiting active context
-- **Improving response time** through focused project scope
-- **Increasing suggestion relevance** with better context focus
-- **Eliminating UI freezing** by reducing processing overhead
-- **Improving development experience** through better performance
+Based on theoretical reasoning and observations, workspace splitting *might* help by:
+- **Potentially reducing memory usage** by limiting active context
+- **Possibly improving response time** through focused project scope
+- **May increase suggestion relevance** with better context focus
+- **Could eliminate UI freezing** by reducing processing overhead
+- **Might improve development experience** through better performance
 
-*Note: These are theoretical expectations, not validated results.*
+*Important: These are theoretical expectations based on reasoning, not validated results. Actual performance improvements will vary significantly based on individual project characteristics, system configuration, and usage patterns. See [DISCLAIMER.md](DISCLAIMER.md) for important information about the speculative nature of these claims.*
 
 ## 🤝 Contributing
 
