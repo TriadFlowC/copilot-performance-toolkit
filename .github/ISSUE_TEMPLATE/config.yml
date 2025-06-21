@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📊 Share Results Survey
+    url: https://forms.gle/placeholder-survey-link
+    about: Share your toolkit results through our community survey
+  - name: 💬 Community Discussion
+    url: https://github.com/TriadFlowC/copilot-performance-toolkit/discussions
+    about: General questions, discussions, and community collaboration
+  - name: 📖 Read Documentation First
+    url: https://github.com/TriadFlowC/copilot-performance-toolkit/blob/main/README.md
+    about: Check the README and documentation before reporting issues
