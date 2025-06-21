@@ -75,25 +75,27 @@ copilot-performance-toolkit/
 └── README.md                       # This file
 ```
 
-## 🔬 Observations and Reasoning
+## 🔬 Observations and Theoretical Reasoning
 
-Based on practical experience and computer science principles, we observe:
+Based on practical experience and computer science principles:
 
-### Performance Issues
+### Common Performance Issues
 - **Memory usage** appears to grow with project size
 - **Response times** may slow down in larger codebases
 - **UI responsiveness** can degrade with many files open
 
-### Theoretical Reasoning
+### Theoretical Analysis
 - **Context management** likely becomes more complex with more files
 - **Memory allocation** for tracking file relationships may grow significantly
-- **Processing overhead** for analyzing large project structures
+- **Processing overhead** for analyzing large project structures increases
 
-### Potential Approach: Workspace Splitting
-Based on observations, splitting large projects into smaller workspaces may help by:
+### Hypothesized Solution: Workspace Splitting
+Based on theoretical reasoning, splitting large projects into smaller workspaces may help by:
 - **Reducing scope** of files the AI needs to consider
 - **Lowering memory usage** by limiting active context
 - **Improving performance** through focused project boundaries
+
+*Note: These are observations and theories, not validated research findings.*
 
 ## 🛠️ Tools Overview
 
@@ -132,13 +134,15 @@ Based on observations, splitting large projects into smaller workspaces may help
 
 ## 🎓 Theoretical Foundation
 
-This toolkit is built on rigorous computer science principles:
+This toolkit applies established computer science principles to AI code assistant performance:
 
-- **Information Theory**: Entropy growth and Kolmogorov complexity analysis
-- **Computational Complexity**: Big O analysis of context management algorithms  
-- **Attention Mechanisms**: Transformer architecture limitations
-- **Cognitive Science**: Working memory and cognitive load theory
-- **Distributed Systems**: Process coordination and resource contention
+- **Information Theory**: Reasoning about entropy growth and complexity in large systems
+- **Computational Complexity**: Theoretical analysis of context management algorithms  
+- **Attention Mechanisms**: Understanding transformer architecture limitations from literature
+- **Cognitive Science**: Applying working memory research to AI systems
+- **Distributed Systems**: Considering process coordination and resource contention
+
+*These are applications of existing theory, not original research contributions.*
 
 ## 💡 Usage Examples
 
@@ -153,22 +157,24 @@ This toolkit is built on rigorous computer science principles:
 - **Framework Optimization**: Apply framework-specific workspace splitting strategies
 - **Continuous Monitoring**: Set up automated performance monitoring
 
-## 🔬 Research Methodology
+## 🔬 Approach
 
-Our approach combines:
-- **Empirical Testing**: Real-world performance measurements
-- **Mathematical Modeling**: Theoretical complexity analysis
-- **Scientific Method**: Hypothesis formation, testing, and validation
-- **Practical Validation**: Real-world implementation and measurement
+This toolkit provides:
+- **Monitoring Tools**: Real-world performance measurements
+- **Theoretical Reasoning**: Complexity analysis based on computer science principles
+- **Hypothesis Formation**: Testable theories about performance issues
+- **Practical Utilities**: Tools to implement potential solutions
 
-## 🎯 Expected Results
+## 🎯 Potential Results
 
-Teams using this toolkit typically see:
-- **60-80% reduction** in VS Code memory usage
-- **50-70% improvement** in Copilot response time  
-- **30-50% increase** in suggestion acceptance rate
-- **Elimination** of UI freezing issues
-- **25-40% improvement** in overall development productivity
+Based on theoretical reasoning, workspace splitting *might* help by:
+- **Reducing memory usage** by limiting active context
+- **Improving response time** through focused project scope
+- **Increasing suggestion relevance** with better context focus
+- **Eliminating UI freezing** by reducing processing overhead
+- **Improving development experience** through better performance
+
+*Note: These are theoretical expectations, not validated results.*
 
 ## 🤝 Contributing
 
@@ -184,8 +190,8 @@ This project is open source and available under the MIT License.
 
 ## 🙏 Acknowledgments
 
-This research was conducted through systematic analysis of VS Code and GitHub Copilot performance characteristics, combined with established computer science principles from information theory, computational complexity, and cognitive science.
+This toolkit combines monitoring utilities with theoretical analysis based on established computer science principles from information theory, computational complexity, and cognitive science. All performance claims are theoretical and should be validated in your specific environment.
 
 ---
 
-**🚀 Ready to optimize your Copilot performance?** Start with the workspace analyzer and memory monitor to understand your current situation, then implement the scientifically-backed solutions provided in this toolkit.
+**🚀 Want to monitor your Copilot performance?** Start with the memory monitor and workspace analyzer to understand your current situation, then test whether the suggested approaches help in your specific case.
