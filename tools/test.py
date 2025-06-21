@@ -513,26 +513,41 @@ def monitor_memory_with_hypothesis(interval=15, duration=600, focus="4"):
         
         return measurements
 
-def monitor_memory(interval=5, duration=60):
+def monitor_memory(interval=5, duration=60, db=None):
     """Monitor VS Code memory usage with detailed process breakdown"""
     print(f"🔍 Monitoring VS Code memory usage...")
     print(f"📊 Checking every {interval} seconds for {duration} seconds")
     print("=" * 100)
     
+    # Start database run if enabled
+    run_id = None
+    if db:
+        run_id = db.start_monitoring_run(
+            mode='continuous_monitoring',
+            interval_seconds=interval,
+            duration_seconds=duration,
+            command_line_args=' '.join(sys.argv),
+            notes='Continuous memory monitoring'
+        )
+    
     start_time = time.time()
     measurements = []
+    measurement_count = 0
     
     try:
         while time.time() - start_time < duration:
-            timestamp = datetime.now().strftime("%H:%M:%S")
+            measurement_count += 1
+            timestamp = datetime.now()
+            timestamp_str = timestamp.strftime("%H:%M:%S")
             process_data = get_vscode_processes()
             
             if not process_data:
-                print(f"[{timestamp}] ❌ No VS Code processes found")
+                print(f"[{timestamp_str}] ❌ No VS Code processes found")
                 time.sleep(interval)
                 continue
             
             total_memory = 0
+            total_vms = 0
             total_cpu = 0
             process_count = len(process_data)
             
@@ -549,6 +564,7 @@ def monitor_memory(interval=5, duration=60):
                     vms = memory_info.vms  # Virtual Memory Size
                     
                     total_memory += rss
+                    total_vms += vms
                     total_cpu += cpu_percent
                     
                     processes_with_memory.append({
@@ -563,10 +579,23 @@ def monitor_memory(interval=5, duration=60):
                 except (psutil.NoSuchProcess, psutil.AccessDenied):
                     continue
             
+            # Save to database if enabled
+            if db and run_id:
+                db.add_measurement(
+                    run_id=run_id,
+                    timestamp=timestamp,
+                    process_count=len(processes_with_memory),
+                    total_rss_bytes=total_memory,
+                    total_vms_bytes=total_vms,
+                    process_data=processes_with_memory,
+                    measurement_index=measurement_count,
+                    notes=f'Measurement {measurement_count}'
+                )
+            
             # Sort by memory usage (RSS) descending
             processes_with_memory.sort(key=lambda x: x['rss'], reverse=True)
             
-            print(f"\n[{timestamp}] 📈 Found {process_count} VS Code process(es) - Sorted by Memory Usage:")
+            print(f"\n[{timestamp_str}] 📈 Found {process_count} VS Code process(es) - Sorted by Memory Usage:")
             print("-" * 100)
             print(f"{'#':>2} {'PID':>6} {'RAM':>12} {'Virtual':>12} {'CPU':>6} {'Process Type':<25}")
             print("-" * 100)
@@ -607,6 +636,13 @@ def monitor_memory(interval=5, duration=60):
             
     except KeyboardInterrupt:
         print("\n\n⏹️  Monitoring stopped by user")
+        if db and run_id:
+            db.end_monitoring_run(run_id, measurement_count, 'interrupted', 'Monitoring stopped by user')
+    
+    # End database run if successful
+    if db and run_id:
+        db.end_monitoring_run(run_id, measurement_count, 'completed', 'Monitoring completed successfully')
+        print(f"💾 Data saved to database (Run ID: {run_id}, {measurement_count} measurements)")
     
     # Print detailed summary
     if measurements:
@@ -2114,7 +2150,7 @@ def main_with_db(db=None):
                 print("\n🔄 Starting continuous monitoring...")
                 print("   (Press Ctrl+C to stop)")
                 time.sleep(1)
-                monitor_memory(interval=10, duration=300)  # 5 minutes with 10s intervals
+                monitor_memory(interval=10, duration=300, db=db)  # 5 minutes with 10s intervals
             
             return
         elif sys.argv[1] in ['-s', '--snapshot']:
@@ -2260,7 +2296,7 @@ def main_with_db(db=None):
         except ValueError:
             print("❌ Invalid duration value. Using default: 60 seconds")
     
-    monitor_memory(interval, duration)
+    monitor_memory(interval, duration, db)
 
 if __name__ == "__main__":
     main()

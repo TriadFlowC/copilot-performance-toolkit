@@ -241,8 +241,8 @@ class MemoryMonitorDB:
     
     def cleanup_old_data(self, days_to_keep: int = 30) -> int:
         """Remove data older than specified days"""
-        cutoff_date = datetime.now().replace(hour=0, minute=0, second=0, microsecond=0)
-        cutoff_date = cutoff_date.replace(day=cutoff_date.day - days_to_keep)
+        from datetime import timedelta
+        cutoff_date = datetime.now() - timedelta(days=days_to_keep)
         
         with sqlite3.connect(self.db_path) as conn:
             cursor = conn.cursor()
