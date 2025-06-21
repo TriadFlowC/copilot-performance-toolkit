@@ -58,12 +58,17 @@ copilot-performance-toolkit/
 │   ├── test.py                     # VS Code memory monitoring
 │   ├── workspace_analyzer_enhanced.py  # Workspace boundary analyzer
 │   └── compare_folders.py          # Folder comparison utility
-├── docs/                           # Documentation and guides
+├── docs/                           # Documentation organized by content type
+│   ├── user-guides/               # How to use the tools
+│   ├── observations/              # What we've observed
+│   ├── theoretical-analysis/      # Why we think it happens
+│   ├── methodology/              # How we reached conclusions
+│   └── validation-status/        # What's been tested vs theoretical
 │   ├── copilot_deep_theory.md      # Deep theoretical analysis
 │   ├── developer_guide_theory_to_practice.md  # Practical implementation guide
 │   ├── copilot_context_theory.md   # Context management theory
 │   └── WORKSPACE_ANALYZER_README.md  # Workspace analyzer documentation
-├── research/                       # Research findings and analysis
+├── research/                       # (Legacy directory - content moved to docs/observations/)
 │   ├── copilot_git_memory_hypothesis.md  # Initial hypothesis testing
 │   ├── repository_size_breakthrough.md   # Key breakthrough insights
 │   ├── analysis_results.md         # Empirical testing results
@@ -120,17 +125,19 @@ Based on theoretical reasoning, splitting large projects into smaller workspaces
 
 ## 📚 Documentation
 
+**📖 [Complete Documentation Structure](docs/)** - All documentation organized by content type
+
 ### For Developers
-- **[Developer Guide](docs/developer_guide_theory_to_practice.md)**: Practical implementation strategies
-- **[Workspace Analyzer Guide](docs/WORKSPACE_ANALYZER_README.md)**: Detailed tool usage instructions
+- **[Developer Guide](docs/user-guides/developer_guide_theory_to_practice.md)**: Practical implementation strategies
+- **[Workspace Analyzer Guide](docs/user-guides/WORKSPACE_ANALYZER_README.md)**: Detailed tool usage instructions
 
 ### For Researchers  
-- **[Deep Theory](docs/copilot_deep_theory.md)**: Comprehensive theoretical analysis using information theory, computational complexity, and cognitive science
-- **[Context Theory](docs/copilot_context_theory.md)**: Focused analysis of context management problems
+- **[Deep Theory](docs/theoretical-analysis/copilot_deep_theory.md)**: Comprehensive theoretical analysis using information theory, computational complexity, and cognitive science
+- **[Context Theory](docs/theoretical-analysis/copilot_context_theory.md)**: Focused analysis of context management problems
 
 ### Key Observations
-- **[Repository Size Analysis](research/repository_size_breakthrough.md)**: Observations suggesting repository size as a primary bottleneck
-- **[Memory Hypothesis](research/copilot_git_memory_hypothesis.md)**: Hypothesis development and observational testing results
+- **[Repository Size Analysis](docs/observations/repository_size_breakthrough.md)**: Observations suggesting repository size as a primary bottleneck
+- **[Memory Hypothesis](docs/observations/copilot_git_memory_hypothesis.md)**: Hypothesis development and observational testing results
 
 ## 🎓 Theoretical Foundation
 

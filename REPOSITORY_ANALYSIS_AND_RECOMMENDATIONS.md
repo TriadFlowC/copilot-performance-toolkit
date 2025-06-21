@@ -103,7 +103,7 @@ This document provides a thorough analysis of the claims made in the TriadFlowC/
 **Files to Update**:
 - `README.md` sections 133-134 (Research Findings)
 - `PROJECT_MANIFEST.md` performance claims
-- All files in `research/` directory
+- All files in `docs/observations/` directory (formerly research/)
 
 #### B. Qualify Performance Claims
 **Actions**:
