@@ -7,7 +7,17 @@ A script to monitor memory usage of VS Code processes on macOS
 import psutil
 import time
 import sys
+import os
+import argparse
 from datetime import datetime
+
+# Database integration (optional)
+try:
+    sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+    from database import MemoryMonitorDB
+    DATABASE_AVAILABLE = True
+except ImportError:
+    DATABASE_AVAILABLE = False
 
 def get_vscode_processes():
     """Find all VS Code related processes with detailed info"""
@@ -1835,8 +1845,81 @@ def monitor_copilot_processes(focus="extension_hosts", duration=300, interval=10
             print("   • Memory growth events happening frequently")
             print("   • Investigate specific Copilot operations causing spikes")
 
+def parse_arguments():
+    """Parse command line arguments with database support"""
+    parser = argparse.ArgumentParser(
+        description="VS Code Memory Monitor with optional database tracking",
+        add_help=False  # We'll handle help manually for backward compatibility
+    )
+    
+    # Database options
+    parser.add_argument('--db-track', action='store_true',
+                       help='Enable database tracking (default: disabled)')
+    parser.add_argument('--db-path', default='performance.db',
+                       help='SQLite database path (default: performance.db)')
+    
+    # Check if we're using the new argument style or legacy style
+    if any(arg.startswith('--db-') for arg in sys.argv):
+        # New style with explicit database arguments
+        known_args, unknown_args = parser.parse_known_args()
+        
+        # Parse remaining arguments manually for backward compatibility
+        legacy_args = []
+        mode = None
+        
+        for arg in unknown_args:
+            if arg in ['-h', '--help', '--snapshot', '--repo-analysis', '--copilot-analysis',
+                      '--freeze-detection', '--git-isolation', '--copilot-focused',
+                      '--copilot-context-test', '--copilot-optimization']:
+                mode = arg
+            else:
+                try:
+                    # Try to parse as integer (interval/duration)
+                    int(arg)
+                    legacy_args.append(arg)
+                except ValueError:
+                    # Unknown argument
+                    pass
+        
+        return known_args, mode, legacy_args
+    else:
+        # Legacy style - no database arguments
+        return argparse.Namespace(db_track=False, db_path='performance.db'), None, sys.argv[1:]
+
+
 def main():
-    """Main function with command line argument handling"""
+    """Main function with command line argument handling and database support"""
+    # Parse arguments
+    db_args, mode, legacy_args = parse_arguments()
+    
+    # Initialize database if requested
+    db = None
+    if db_args.db_track:
+        if not DATABASE_AVAILABLE:
+            print("❌ Database functionality not available (missing database.py)")
+            print("   Running in console-only mode...")
+        else:
+            try:
+                db = MemoryMonitorDB(db_args.db_path)
+                print(f"📊 Database tracking enabled: {db_args.db_path}")
+            except Exception as e:
+                print(f"❌ Database initialization failed: {e}")
+                print("   Running in console-only mode...")
+                db = None
+    
+    # Handle legacy argument style
+    if mode or legacy_args:
+        if mode:
+            sys.argv = ['test.py', mode] + legacy_args
+        else:
+            sys.argv = ['test.py'] + legacy_args
+    
+    # Continue with original main logic but pass db parameter
+    return main_with_db(db)
+
+
+def main_with_db(db=None):
+    """Original main function with database integration"""
     if len(sys.argv) > 1:
         if sys.argv[1] in ['-h', '--help']:
             print("VS Code Memory Monitor")
@@ -1851,6 +1934,8 @@ def main():
             print("  --copilot-focused: continuous monitoring focused on Copilot processes")
             print("  --copilot-context-test: test impact of Copilot context size on memory")
             print("  --copilot-optimization: generate Copilot optimization recommendations")
+            print("  --db-track: enable database tracking (stores data in SQLite)")
+            print("  --db-path PATH: specify database file path (default: performance.db)")
             print("  interval: seconds between checks (default: 5)")
             print("  duration: total monitoring time in seconds (default: 60)")
             print("\nExamples:")
@@ -1862,6 +1947,8 @@ def main():
             print("  python test.py --copilot-focused")
             print("  python test.py --copilot-context-test")
             print("  python test.py --copilot-optimization")
+            print("  python test.py --db-track --snapshot")
+            print("  python test.py --db-track --db-path mydata.db --copilot-analysis")
             print("  python test.py 3 30    # Monitor for 30s with 3s intervals")
             return
         elif sys.argv[1] == '--copilot-focused':
@@ -1883,7 +1970,7 @@ def main():
                 print("\n🔄 Starting Copilot-focused monitoring...")
                 print("   (Press Ctrl+C to stop)")
                 time.sleep(1)
-                monitor_copilot_focused()
+                monitor_copilot_processes(focus="extension_hosts", duration=300, interval=10, db=db)
             
             return
         elif sys.argv[1] == '--copilot-context-test':
@@ -2033,14 +2120,28 @@ def main():
         elif sys.argv[1] in ['-s', '--snapshot']:
             # Single snapshot mode with detailed breakdown
             print("📸 Taking a detailed memory snapshot...")
+            
+            # Start database run if enabled
+            run_id = None
+            if db:
+                run_id = db.start_monitoring_run(
+                    mode='snapshot',
+                    command_line_args=' '.join(sys.argv),
+                    notes='Single memory snapshot'
+                )
+            
             process_data = get_vscode_processes()
             
             if not process_data:
                 print("❌ No VS Code processes found")
+                if db and run_id:
+                    db.end_monitoring_run(run_id, 0, 'no_processes', 'No VS Code processes found')
                 return
             
-            timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            timestamp = datetime.now()
+            timestamp_str = timestamp.strftime("%Y-%m-%d %H:%M:%S")
             total_memory = 0
+            total_vms = 0
             
             # Collect and sort process information
             processes_with_memory = []
@@ -2052,6 +2153,7 @@ def main():
                     rss = memory_info.rss
                     vms = memory_info.vms
                     total_memory += rss
+                    total_vms += vms
                     
                     processes_with_memory.append({
                         'pid': proc.pid,
@@ -2064,10 +2166,24 @@ def main():
                 except (psutil.NoSuchProcess, psutil.AccessDenied):
                     continue
             
+            # Save to database if enabled
+            if db and run_id:
+                db.add_measurement(
+                    run_id=run_id,
+                    timestamp=timestamp,
+                    process_count=len(processes_with_memory),
+                    total_rss_bytes=total_memory,
+                    total_vms_bytes=total_vms,
+                    process_data=processes_with_memory,
+                    measurement_index=1,
+                    notes='Memory snapshot'
+                )
+                db.end_monitoring_run(run_id, 1, 'completed', 'Snapshot completed successfully')
+            
             # Sort by memory usage
             processes_with_memory.sort(key=lambda x: x['rss'], reverse=True)
             
-            print(f"\n[{timestamp}] Found {len(processes_with_memory)} VS Code process(es):")
+            print(f"\n[{timestamp_str}] Found {len(processes_with_memory)} VS Code process(es):")
             print("=" * 100)
             print(f"{'#':>2} {'PID':>6} {'RAM':>12} {'Virtual':>12} {'CPU':>6} {'Process Type':<25}")
             print("=" * 100)
@@ -2080,6 +2196,14 @@ def main():
                       f"{format_bytes(proc_info['vms']):>12s} "
                       f"{proc_info['cpu']:5.1f}% "
                       f"{proc_info['type']:<25}")
+            
+            print("=" * 100)
+            print(f"📊 TOTAL RAM: {format_bytes(total_memory)}")
+            
+            if db and run_id:
+                print(f"💾 Data saved to database (Run ID: {run_id})")
+            
+            return
             
             print("=" * 100)
             print(f"📊 TOTAL RAM: {format_bytes(total_memory)}")
