@@ -18,6 +18,7 @@
 ### User Guides (How to Use)
 - **[Developer Guide](docs/user-guides/developer_guide_theory_to_practice.md)** - Practical implementation strategies for developers
 - **[Workspace Analyzer Guide](docs/user-guides/WORKSPACE_ANALYZER_README.md)** - Detailed usage instructions for the workspace analyzer
+- **[SQLite Integration Guide](SQLITE_INTEGRATION_USAGE.md)** - Database tracking and analytics for memory monitoring
 
 ### Theoretical Analysis (Why It Happens)
 - **[Deep Theory](docs/theoretical-analysis/copilot_deep_theory.md)** - Comprehensive theoretical analysis with mathematical foundations

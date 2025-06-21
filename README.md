@@ -29,9 +29,31 @@ python tools/test.py --copilot-focused
 
 # Detect UI freezing
 python tools/test.py --mode freeze-detection
+
+# Enable database tracking for persistent storage
+python tools/test.py --db-track --copilot-analysis
+
+# Custom database path
+python tools/test.py --db-track --db-path mydata.db --snapshot
 ```
 
-### 2. Workspace Analysis
+### 2. Database Utilities (New!)
+Query, export, and manage monitoring data:
+```bash
+# View database statistics
+python tools/db_utils.py stats
+
+# List monitoring runs
+python tools/db_utils.py list
+
+# Export data to JSON
+python tools/db_utils.py export --output results.json
+
+# Backup database
+python tools/db_utils.py backup
+```
+
+### 3. Workspace Analysis
 Analyze your repository and get optimized workspace suggestions:
 ```bash
 # Analyze current directory
@@ -44,7 +66,7 @@ python tools/workspace_analyzer_enhanced.py /path/to/large/repo
 python tools/workspace_analyzer_enhanced.py /path/to/repo --dry-run
 ```
 
-### 3. Folder Comparison
+### 4. Folder Comparison
 Compare two folders while respecting .gitignore patterns:
 ```bash
 python tools/compare_folders.py /path/to/folder1 /path/to/folder2
