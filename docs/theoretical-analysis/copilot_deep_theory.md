@@ -4,6 +4,12 @@
 
 This document provides an in-depth theoretical analysis of why AI code assistants like GitHub Copilot face fundamental scaling limitations. We examine the problem through multiple lenses: information theory, computational complexity, cognitive science, and distributed systems theory. Our analysis reveals that the performance degradation is not merely an implementation issue but represents fundamental computational and information-theoretic limits.
 
+## Methodology
+- **Data Collection**: Theoretical framework based on established computer science principles from information theory, computational complexity theory, and software architecture analysis
+- **Analysis Method**: Mathematical modeling and theoretical reasoning applied to observed performance patterns in AI code assistants, with cross-validation against known architectural constraints
+- **Limitations**: This is a theoretical analysis without controlled experimental validation; conclusions are based on established theory rather than empirical testing
+- **Confidence Level**: High - Based on well-established computational theory principles, though empirical validation is needed
+
 ## Part I: Information Theory Foundations
 
 ### The Code Context as Information Space

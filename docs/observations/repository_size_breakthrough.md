@@ -4,6 +4,12 @@
 
 The observation that **"Copilot works perfectly in small projects"** provides an important clue about potential performance bottlenecks!
 
+## Methodology
+- **Data Collection**: Comparative analysis between small repositories (~10-20 files) and large repositories (1000s-10000s of files) using memory monitoring and performance observation
+- **Analysis Method**: Pattern recognition through direct comparison of Copilot behavior across different repository sizes, with focus on memory usage and UI responsiveness
+- **Limitations**: Observational study based on limited repository samples; no controlled variables or statistical analysis; findings represent patterns rather than definitive causal relationships
+- **Confidence Level**: Medium - Clear observational patterns with consistent results across repository size comparisons, but lacks controlled experimental validation
+
 ## The Pattern is Clear
 
 ### ✅ Small Repository (test_mem_vcode)

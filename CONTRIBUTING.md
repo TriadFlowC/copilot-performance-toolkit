@@ -71,6 +71,19 @@ We welcome improvements to:
 - [ ] Disclaimers align with project philosophy
 - [ ] Language is observational, not research-like
 - [ ] Practical examples are provided where applicable
+- [ ] **Methodology sections included** for all research and analysis files
+
+### Research and Analysis File Requirements
+- [ ] **Standardized Methodology Section** using the following format:
+  ```markdown
+  ## Methodology
+  - **Data Collection**: [Describe how data was collected]
+  - **Analysis Method**: [Explain how conclusions were drawn]
+  - **Limitations**: [What this doesn't prove]
+  - **Confidence Level**: [High/Medium/Low]
+  ```
+- [ ] Methodology section placed early in document (after abstract/summary)
+- [ ] All claims supported by clear methodological approach
 
 ### Tool Standards
 - [ ] Tools provide genuine monitoring utility

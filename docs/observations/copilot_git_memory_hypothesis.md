@@ -17,6 +17,12 @@ After conducting Git isolation tests (removing `.git` folder), **NO SIGNIFICANT 
 
 **Conclusion**: The memory issue is **repository size-dependent Copilot context explosion**, not Git-driven.
 
+## Methodology
+- **Data Collection**: Comparative testing between small and large repositories, Git isolation testing (removing .git folder), and memory monitoring during development workflows
+- **Analysis Method**: Hypothesis testing through controlled comparison scenarios, process behavior analysis, and pattern correlation between repository size and performance
+- **Limitations**: Limited to specific development environments; no statistical sampling across different projects or users; findings based on observational patterns rather than controlled experiments
+- **Confidence Level**: Medium - Strong observational evidence with consistent patterns, supported by comparative testing, but lacks formal experimental validation
+
 ## Revised Core Hypothesis
 **Repository Size-Dependent Copilot Context Explosion**: GitHub Copilot's context analysis scales poorly with repository size, causing exponential memory growth and UI freezing in large codebases.
 

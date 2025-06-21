@@ -6,6 +6,12 @@ The hypothesis about Copilot, Git, and memory interactions shows **interesting o
 
 *Important Note: These findings are based on observational data and theoretical analysis, not controlled experimental validation.*
 
+## Methodology
+- **Data Collection**: Real-time memory monitoring using custom Python scripts during VS Code development sessions with Copilot active
+- **Analysis Method**: Pattern identification in memory allocation cycles, process behavior correlation, and hypothesis testing through observational data
+- **Limitations**: Observational study without controlled conditions; findings based on single environment testing without statistical validation
+- **Confidence Level**: Medium - Supported by consistent observational patterns and theoretical backing, but lacks controlled experimental validation
+
 ## Critical Findings
 
 ### 🧊 UI Freezing Root Cause Analysis

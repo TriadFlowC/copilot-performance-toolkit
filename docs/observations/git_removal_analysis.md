@@ -4,6 +4,12 @@
 
 Your idea to remove Git from the folder is an **excellent debugging strategy** that could definitively isolate the root cause of the memory issues. Here's a comprehensive analysis:
 
+## Methodology
+- **Data Collection**: Strategic hypothesis formulation based on monitoring data analysis, with planned controlled testing through Git folder isolation
+- **Analysis Method**: Systematic isolation testing methodology to separate Git-related effects from Copilot-specific performance issues
+- **Limitations**: Analysis represents testing strategy and hypothesis rather than completed experimental results; recommendations based on theoretical approach
+- **Confidence Level**: Low to Medium - Testing strategy is theoretically sound, but actual results from Git isolation testing would determine final confidence level
+
 ## Why This Could Work
 
 ### 🎯 **Git Integration Bottlenecks**
