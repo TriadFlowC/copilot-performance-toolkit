@@ -52,10 +52,16 @@ workspaces/
 .temp/
 temp/
 
+# Database files
+*.db
+*.sqlite
+*.sqlite3
+
 # Test outputs
 analysis_output/
 memory_reports/
 workspace_analysis_report.md
+performance_export.json
 
 # Backup files
 *_backup/
