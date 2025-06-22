@@ -1,0 +1,36 @@
+=== Empty File Investigation Summary ===
+Timestamp: Sun Jun 22 04:06:50 UTC 2025
+Evidence Directory: /home/runner/work/copilot-performance-toolkit/copilot-performance-toolkit/tools/monitoring/evidence_20250622_040200
+
+=== Monitoring Duration ===
+Start: Timestamp: Sun Jun 22 04:02:00 UTC 2025
+End: Sun Jun 22 04:06:50 UTC 2025
+
+=== Files Generated ===
+total 176
+drwxr-xr-x 2 runner docker  4096 Jun 22 04:04 .
+drwxr-xr-x 4 runner docker  4096 Jun 22 04:06 ..
+-rw-r--r-- 1 runner docker  3979 Jun 22 04:02 baseline_files.txt
+-rw-r--r-- 1 runner docker     0 Jun 22 04:04 current_empty_files.txt
+-rw-r--r-- 1 runner docker  3979 Jun 22 04:04 current_files.txt
+-rw-r--r-- 1 runner docker   513 Jun 22 04:04 extension_activity_tracker.log
+-rw-r--r-- 1 runner docker   211 Jun 22 04:02 file_creation_monitor.log
+-rw-r--r-- 1 runner docker 18669 Jun 22 04:02 git_state_before.txt
+-rw-r--r-- 1 runner docker   337 Jun 22 04:02 git_summary_before.txt
+-rw-r--r-- 1 runner docker   352 Jun 22 04:06 investigation_summary.txt
+-rw-r--r-- 1 runner docker     0 Jun 22 04:02 last_empty_files.txt
+-rw-r--r-- 1 runner docker    10 Jun 22 04:04 last_processes.txt
+-rw-r--r-- 1 runner docker   517 Jun 22 04:04 master_monitor.log
+-rw-r--r-- 1 runner docker 45436 Jun 22 04:04 memory_usage.log
+-rw-r--r-- 1 runner docker    15 Jun 22 04:02 monitor_pids.txt
+-rw-r--r-- 1 runner docker 55928 Jun 22 04:04 process_activity_monitor.log
+
+=== Empty File Alerts ===
+No empty file alerts recorded
+
+=== Process Activity Summary ===
+
+=== Extension Activity Summary ===
+Starting Copilot activity monitoring...
+Starting Copilot activity monitoring
+

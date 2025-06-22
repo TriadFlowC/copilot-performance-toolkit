@@ -1,0 +1,28 @@
+=== System Logs (Last 2 Hours) ===
+Timestamp: Sun Jun 22 04:01:51 UTC 2025
+
+=== Linux System Logs (Last 2 hours) ===
+Jun 22 03:57:06 fv-az1267-342 kernel: Speculative Return Stack Overflow: IBPB-extending microcode not applied!
+Jun 22 03:57:06 fv-az1267-342 kernel: Speculative Return Stack Overflow: Vulnerable: Safe RET, no microcode
+Jun 22 03:57:06 fv-az1267-342 kernel: Memory: 16363796K/16776760K available (20480K kernel code, 4437K rwdata, 13952K rodata, 4860K init, 4848K bss, 404468K reserved, 0K cma-reserved)
+Jun 22 03:57:06 fv-az1267-342 kernel: pci 0000:00:08.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+Jun 22 03:57:06 fv-az1267-342 systemd[1]: systemd 255.4-1ubuntu8.8 running in system mode (+PAM +AUDIT +SELINUX +APPARMOR +IMA +SMACK +SECCOMP +GCRYPT -GNUTLS +OPENSSL +ACL +BLKID +CURL +ELFUTILS +FIDO2 +IDN2 -IDN +IPTC +KMOD +LIBCRYPTSETUP +LIBFDISK +PCRE2 -PWQUALITY +P11KIT +QRENCODE +TPM2 +BZIP2 +LZ4 +XZ +ZLIB +ZSTD -BPF_FRAMEWORK -XKBCOMMON +UTMP +SYSVINIT default-hierarchy=unified)
+Jun 22 03:57:06 fv-az1267-342 (udev-worker)[263]: sda: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/sda' failed with exit code 1.
+Jun 22 03:57:06 fv-az1267-342 (udev-worker)[262]: sdb: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/sdb' failed with exit code 1.
+Jun 22 03:57:06 fv-az1267-342 (udev-worker)[262]: sdb1: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/sdb1' failed with exit code 1.
+Jun 22 03:57:06 fv-az1267-342 (udev-worker)[263]: sda1: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/sda1' failed with exit code 1.
+Jun 22 03:57:06 fv-az1267-342 (udev-worker)[256]: sdb16: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/sdb16' failed with exit code 1.
+Jun 22 03:57:06 fv-az1267-342 (udev-worker)[258]: sdb15: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/sdb15' failed with exit code 1.
+Jun 22 03:57:07 fv-az1267-342 (udev-worker)[275]: sdb14: Process '/usr/bin/unshare -m /usr/bin/snap auto-import --mount=/dev/sdb14' failed with exit code 1.
+Jun 22 03:57:28 fv-az1267-342 python3[1555]: 2025-06-22T03:57:28.780645Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Executing command: /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13/bin/custom-script-shim install with environment variables: {"AZURE_GUEST_AGENT_UNINSTALL_CMD_EXIT_CODE": "NOT_RUN", "AZURE_GUEST_AGENT_EXTENSION_PATH": "/var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13", "AZURE_GUEST_AGENT_EXTENSION_VERSION": "2.1.13", "AZURE_GUEST_AGENT_WIRE_PROTOCOL_ADDRESS": "168.63.129.16", "ConfigSequenceNumber": "48", "AZURE_GUEST_AGENT_EXTENSION_SUPPORTED_FEATURES": "[{\"Key\": \"ExtensionTelemetryPipeline\", \"Value\": \"1.0\"}]"}
+Jun 22 03:57:30 fv-az1267-342 python3[1555]: 2025-06-22T03:57:30.805207Z INFO ExtHandler [Microsoft.Azure.Extensions.CustomScript-2.1.13] Executing command: /var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13/bin/custom-script-shim enable with environment variables: {"AZURE_GUEST_AGENT_UNINSTALL_CMD_EXIT_CODE": "NOT_RUN", "AZURE_GUEST_AGENT_EXTENSION_PATH": "/var/lib/waagent/Microsoft.Azure.Extensions.CustomScript-2.1.13", "AZURE_GUEST_AGENT_EXTENSION_VERSION": "2.1.13", "AZURE_GUEST_AGENT_WIRE_PROTOCOL_ADDRESS": "168.63.129.16", "ConfigSequenceNumber": "48", "AZURE_GUEST_AGENT_EXTENSION_SUPPORTED_FEATURES": "[{\"Key\": \"ExtensionTelemetryPipeline\", \"Value\": \"1.0\"}]"}
+Jun 22 04:00:24 fv-az1267-342 systemd[3079]: gpg-agent-ssh.socket: Control process exited, code=exited, status=1/FAILURE
+Jun 22 04:00:24 fv-az1267-342 systemd[3079]: gpg-agent-ssh.socket: Failed with result 'exit-code'.
+
+=== System Information ===
+Linux fv-az1267-342 6.11.0-1015-azure #15~24.04.1-Ubuntu SMP Thu May  1 02:52:08 UTC 2025 x86_64 x86_64 x86_64 GNU/Linux
+
+=== Disk Usage ===
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root        72G   48G   25G  67% /
+
