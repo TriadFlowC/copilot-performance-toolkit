@@ -44,7 +44,20 @@ python tools/workspace_analyzer_enhanced.py /path/to/large/repo
 python tools/workspace_analyzer_enhanced.py /path/to/repo --dry-run
 ```
 
-### 3. Folder Comparison
+### 3. Empty File Investigation System
+For mysterious empty file creation issues:
+```bash
+# Quick interactive investigation
+./tools/monitoring/quick_start.sh
+
+# Collect current evidence
+./forensics/collect_evidence.sh
+
+# Start real-time monitoring
+./tools/monitoring/master_monitor.sh
+```
+
+### 4. Folder Comparison
 Compare two folders while respecting .gitignore patterns:
 ```bash
 python tools/compare_folders.py /path/to/folder1 /path/to/folder2
@@ -57,26 +70,29 @@ copilot-performance-toolkit/
 ├── tools/                          # Main tools and scripts
 │   ├── test.py                     # VS Code memory monitoring
 │   ├── workspace_analyzer_enhanced.py  # Workspace boundary analyzer
-│   └── compare_folders.py          # Folder comparison utility
+│   ├── compare_folders.py          # Folder comparison utility
+│   └── monitoring/                 # Empty file investigation system
+│       ├── master_monitor.sh       # Main monitoring orchestrator
+│       ├── file_creation_monitor.sh # Real-time file system monitoring
+│       ├── process_activity_monitor.sh # VS Code process tracking
+│       ├── extension_activity_tracker.sh # Extension behavior analysis
+│       ├── git_state_capture.sh    # Git state snapshots
+│       ├── restoration_test.sh     # Automated recreation testing
+│       ├── stop_monitoring.sh      # Clean shutdown and evidence packaging
+│       ├── quick_start.sh          # Interactive investigation interface
+│       └── test_system.sh          # Test suite for monitoring system
+├── forensics/                      # Forensic investigation tools
+│   └── collect_evidence.sh         # Comprehensive evidence collection
 ├── docs/                           # Documentation organized by content type
 │   ├── user-guides/               # How to use the tools
 │   ├── observations/              # What we've observed
 │   ├── theoretical-analysis/      # Why we think it happens
 │   ├── methodology/              # How we reached conclusions
 │   └── validation-status/        # What's been tested vs theoretical
-│   ├── copilot_deep_theory.md      # Deep theoretical analysis
-│   ├── developer_guide_theory_to_practice.md  # Practical implementation guide
-│   ├── copilot_context_theory.md   # Context management theory
-│   └── WORKSPACE_ANALYZER_README.md  # Workspace analyzer documentation
-├── research/                       # (Legacy directory - content moved to docs/observations/)
-│   ├── copilot_git_memory_hypothesis.md  # Initial hypothesis testing
-│   ├── repository_size_breakthrough.md   # Key breakthrough insights
-│   ├── analysis_results.md         # Empirical testing results
-│   ├── git_removal_analysis.md     # Git isolation testing
-│   └── final_analysis_next_steps.md  # Research conclusions
 ├── examples/                       # Usage examples and demos
 │   └── workspace_analyzer_demo.py  # Demo script
 ├── requirements.txt                # Python dependencies
+├── EMPTY_FILE_INVESTIGATION.md     # Comprehensive investigation guide
 └── README.md                       # This file
 ```
 
