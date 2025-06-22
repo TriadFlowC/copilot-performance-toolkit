@@ -1,0 +1,36 @@
+=== Forensic Investigation Summary ===
+Generated: Sun Jun 22 04:01:51 UTC 2025
+Repository: /home/runner/work/copilot-performance-toolkit/copilot-performance-toolkit
+
+=== Key Findings ===
+Empty files detected: 0
+
+=== VS Code Processes ===
+VS Code processes running: 6
+Active VS Code processes:
+runner      1914  0.3  0.5 11590988 82252 ?      Sl   04:00   0:00 /home/runner/work/_temp/ghcca-node/node/bin/node /home/runner/work/_temp/copilot-developer-action-main/mcp/dist/index.js
+runner      1926  0.0  0.0 1807828 11920 ?       Sl   04:00   0:00 ./copilot-developer-action-main/blackbird-mcp-server/blackbird-mcp-server stdio
+runner      1934  0.0  0.0 1234720 12852 ?       Sl   04:00   0:00 ./copilot-developer-action-main/github-mcp-server/github-mcp-server stdio --read-only
+runner      1945  0.0  0.0   7880  3600 ?        S    04:00   0:00 /bin/bash /home/runner/work/_temp/copilot-developer-action-main/ebpf/launch.sh /home/runner/work/_temp/ghcca-node/node/bin/node --enable-source-maps /home/runner/work/_temp/copilot-developer-action-main/dist/index.js /home/runner/work/_temp/runtime-logs false
+root        3098 25.8  0.9 1373976 159660 ?      Sl   04:00   0:22 padawan-fw run su runner -p -c /home/runner/work/_temp/runtime-logs/command.sh --allow-list=localhost,https://github.com/,githubusercontent.com,https://raw.githubusercontent.com/,https://objects.githubusercontent.com/,https://codeload.github.com/,https://uploads.github.com/user-attachments/assets/,https://api.github.com/internal/user-attachments/assets/,https://github.githubassets.com/assets,https://*.githubusercontent.com,https://uploads.github.com,172.18.0.1,168.63.129.16,host.docker.internal,https://lfs.github.com/,https://github-cloud.githubusercontent.com/,https://github-cloud.s3.amazonaws.com/,https://api.githubcopilot.com/,https://api.githubcopilot.com/,,https://github.com,fv-az1267-342 --log-file=/home/runner/work/_temp/runtime-logs/fw.jsonl
+
+=== Evidence Files Generated ===
+total 56
+drwxr-xr-x 2 runner docker  4096 Jun 22 04:01 .
+drwxr-xr-x 4 runner docker  4096 Jun 22 04:01 ..
+-rw-r--r-- 1 runner docker    97 Jun 22 04:01 all_empty_files.txt
+-rw-r--r-- 1 runner docker 17177 Jun 22 04:01 file_forensics.txt
+-rw-r--r-- 1 runner docker  1338 Jun 22 04:01 git_status.txt
+-rw-r--r-- 1 runner docker   669 Jun 22 04:01 investigation_metadata.txt
+-rw-r--r-- 1 runner docker  1969 Jun 22 04:01 investigation_summary.txt
+-rw-r--r-- 1 runner docker  2016 Jun 22 04:01 open_files.txt
+-rw-r--r-- 1 runner docker  3753 Jun 22 04:01 running_processes.txt
+-rw-r--r-- 1 runner docker  3987 Jun 22 04:01 system_logs.txt
+
+=== Next Steps ===
+1. Analyze file timestamps in file_forensics.txt
+2. Check process activity in running_processes.txt
+3. Review open files in open_files.txt
+4. If no empty files exist, set up monitoring for recreation
+5. If empty files exist, prepare for restoration test
+

@@ -1,0 +1,409 @@
+=== Git State Capture: before ===
+Timestamp: Sun Jun 22 04:05:03 UTC 2025
+Repository Path: /home/runner/work/copilot-performance-toolkit/copilot-performance-toolkit
+
+=== Git Status ===
+?? forensics/evidence_20250622_040150/
+?? tools/monitoring/evidence_20250622_040200/
+?? tools/monitoring/evidence_20250622_040503/
+?? tools/monitoring/evidence_package_20250622_040424.tar.gz
+
+=== Git Status (Verbose) ===
+On branch copilot/fix-15
+Your branch is up to date with 'origin/copilot/fix-15'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	forensics/evidence_20250622_040150/
+	tools/monitoring/evidence_20250622_040200/
+	tools/monitoring/evidence_20250622_040503/
+	tools/monitoring/evidence_package_20250622_040424.tar.gz
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+=== Git Log (Last 10 commits) ===
+36021c5 Acknowledge user feedback and clarify investigation context for empty file issue
+c92e7f8 Add comprehensive investigation summary and final documentation
+ba66e38 Implement comprehensive empty file investigation system with monitoring tools
+17d239f Initial plan for issue
+a70a19e Merge pull request #8 from TriadFlowC/copilot/fix-7
+
+=== Git Branch Information ===
+* copilot/fix-15 36021c5 Acknowledge user feedback and clarify investigation context for empty file issue
+
+=== Git Remote Information ===
+origin	https://github.com/TriadFlowC/copilot-performance-toolkit (fetch)
+origin	https://github.com/TriadFlowC/copilot-performance-toolkit (push)
+
+=== File Timestamps and Sizes ===
+  File: ./PROJECT_MANIFEST.md
+  Size: 9020      	Blocks: 24         IO Block: 4096   regular file
+Device: 8,17	Inode: 274267      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.148881185 +0000
+Change: 2025-06-22 04:00:26.148881185 +0000
+ Birth: 2025-06-22 04:00:26.148881185 +0000
+  File: ./TABLE_OF_CONTENTS.md
+  Size: 3529      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,17	Inode: 274271      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.148881185 +0000
+Change: 2025-06-22 04:00:26.148881185 +0000
+ Birth: 2025-06-22 04:00:26.148881185 +0000
+  File: ./COMMUNITY_SURVEY.md
+  Size: 4702      	Blocks: 16         IO Block: 4096   regular file
+Device: 8,17	Inode: 274259      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.147881183 +0000
+Change: 2025-06-22 04:00:26.147881183 +0000
+ Birth: 2025-06-22 04:00:26.147881183 +0000
+  File: ./DISCLAIMER.md
+  Size: 2351      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,17	Inode: 274261      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.147881183 +0000
+Change: 2025-06-22 04:00:26.147881183 +0000
+ Birth: 2025-06-22 04:00:26.147881183 +0000
+  File: ./README.md
+  Size: 10622     	Blocks: 24         IO Block: 4096   regular file
+Device: 8,17	Inode: 274268      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.148881185 +0000
+Change: 2025-06-22 04:00:26.148881185 +0000
+ Birth: 2025-06-22 04:00:26.148881185 +0000
+  File: ./.github/ISSUE_TEMPLATE/bug-report.md
+  Size: 772       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,17	Inode: 274254      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.147881183 +0000
+Change: 2025-06-22 04:00:26.147881183 +0000
+ Birth: 2025-06-22 04:00:26.147881183 +0000
+  File: ./.github/ISSUE_TEMPLATE/performance-report.md
+  Size: 1740      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,17	Inode: 274257      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.147881183 +0000
+Change: 2025-06-22 04:00:26.147881183 +0000
+ Birth: 2025-06-22 04:00:26.147881183 +0000
+  File: ./.github/ISSUE_TEMPLATE/feature-request.md
+  Size: 1051      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,17	Inode: 274256      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.147881183 +0000
+Change: 2025-06-22 04:00:26.147881183 +0000
+ Birth: 2025-06-22 04:00:26.147881183 +0000
+  File: ./REPOSITORY_ANALYSIS_AND_RECOMMENDATIONS.md
+  Size: 8656      	Blocks: 24         IO Block: 4096   regular file
+Device: 8,17	Inode: 274270      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.148881185 +0000
+Change: 2025-06-22 04:00:26.148881185 +0000
+ Birth: 2025-06-22 04:00:26.148881185 +0000
+  File: ./METRICS.md
+  Size: 7520      	Blocks: 16         IO Block: 4096   regular file
+Device: 8,17	Inode: 274266      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.148881185 +0000
+Change: 2025-06-22 04:00:26.148881185 +0000
+ Birth: 2025-06-22 04:00:26.148881185 +0000
+  File: ./IMPROVEMENTS_SUMMARY.md
+  Size: 2020      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,17	Inode: 274264      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.147881183 +0000
+Change: 2025-06-22 04:00:26.147881183 +0000
+ Birth: 2025-06-22 04:00:26.147881183 +0000
+  File: ./VALIDATION_PROCESS.md
+  Size: 8438      	Blocks: 24         IO Block: 4096   regular file
+Device: 8,17	Inode: 274272      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.148881185 +0000
+Change: 2025-06-22 04:00:26.148881185 +0000
+ Birth: 2025-06-22 04:00:26.148881185 +0000
+  File: ./tools/test.py
+  Size: 94856     	Blocks: 192        IO Block: 4096   regular file
+Device: 8,17	Inode: 274315      Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.022895909 +0000
+Modify: 2025-06-22 04:00:26.150881188 +0000
+Change: 2025-06-22 04:00:26.150881188 +0000
+ Birth: 2025-06-22 04:00:26.150881188 +0000
+  File: ./tools/compare_folders.py
+  Size: 5196      	Blocks: 16         IO Block: 4096   regular file
+Device: 8,17	Inode: 274304      Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.022895909 +0000
+Modify: 2025-06-22 04:00:26.150881188 +0000
+Change: 2025-06-22 04:00:26.150881188 +0000
+ Birth: 2025-06-22 04:00:26.150881188 +0000
+  File: ./tools/workspace_analyzer_enhanced.py
+  Size: 24824     	Blocks: 56         IO Block: 4096   regular file
+Device: 8,17	Inode: 274316      Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.022895909 +0000
+Modify: 2025-06-22 04:00:26.151881190 +0000
+Change: 2025-06-22 04:00:26.151881190 +0000
+ Birth: 2025-06-22 04:00:26.150881188 +0000
+  File: ./tools/__init__.py
+  Size: 151       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,17	Inode: 274303      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.022895909 +0000
+Modify: 2025-06-22 04:00:26.149881186 +0000
+Change: 2025-06-22 04:00:26.149881186 +0000
+ Birth: 2025-06-22 04:00:26.149881186 +0000
+  File: ./__init__.py
+  Size: 734       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,17	Inode: 274273      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.148881185 +0000
+Change: 2025-06-22 04:00:26.148881185 +0000
+ Birth: 2025-06-22 04:00:26.148881185 +0000
+  File: ./examples/workspace_analyzer_demo.py
+  Size: 2690      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,17	Inode: 274296      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.022895909 +0000
+Modify: 2025-06-22 04:00:26.149881186 +0000
+Change: 2025-06-22 04:00:26.149881186 +0000
+ Birth: 2025-06-22 04:00:26.149881186 +0000
+  File: ./INVESTIGATION_SUMMARY.md
+  Size: 8586      	Blocks: 24         IO Block: 4096   regular file
+Device: 8,17	Inode: 274265      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.148881185 +0000
+Change: 2025-06-22 04:00:26.148881185 +0000
+ Birth: 2025-06-22 04:00:26.147881183 +0000
+  File: ./docs/README.md
+  Size: 3517      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,17	Inode: 274275      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.148881185 +0000
+Change: 2025-06-22 04:00:26.148881185 +0000
+ Birth: 2025-06-22 04:00:26.148881185 +0000
+  File: ./docs/validation-status/README.md
+  Size: 5339      	Blocks: 16         IO Block: 4096   regular file
+Device: 8,17	Inode: 274294      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.022895909 +0000
+Modify: 2025-06-22 04:00:26.149881186 +0000
+Change: 2025-06-22 04:00:26.149881186 +0000
+ Birth: 2025-06-22 04:00:26.149881186 +0000
+  File: ./docs/theoretical-analysis/copilot_deep_theory.md
+  Size: 15055     	Blocks: 32         IO Block: 4096   regular file
+Device: 8,17	Inode: 274288      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.149881186 +0000
+Change: 2025-06-22 04:00:26.149881186 +0000
+ Birth: 2025-06-22 04:00:26.149881186 +0000
+  File: ./docs/theoretical-analysis/README.md
+  Size: 1876      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,17	Inode: 274286      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.149881186 +0000
+Change: 2025-06-22 04:00:26.149881186 +0000
+ Birth: 2025-06-22 04:00:26.149881186 +0000
+  File: ./docs/theoretical-analysis/copilot_context_theory.md
+  Size: 11261     	Blocks: 24         IO Block: 4096   regular file
+Device: 8,17	Inode: 274287      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.149881186 +0000
+Change: 2025-06-22 04:00:26.149881186 +0000
+ Birth: 2025-06-22 04:00:26.149881186 +0000
+  File: ./docs/methodology/README.md
+  Size: 3743      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,17	Inode: 274277      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.148881185 +0000
+Change: 2025-06-22 04:00:26.148881185 +0000
+ Birth: 2025-06-22 04:00:26.148881185 +0000
+  File: ./docs/user-guides/README.md
+  Size: 1146      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,17	Inode: 274290      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.022895909 +0000
+Modify: 2025-06-22 04:00:26.149881186 +0000
+Change: 2025-06-22 04:00:26.149881186 +0000
+ Birth: 2025-06-22 04:00:26.149881186 +0000
+  File: ./docs/user-guides/developer_guide_theory_to_practice.md
+  Size: 13266     	Blocks: 32         IO Block: 4096   regular file
+Device: 8,17	Inode: 274292      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.022895909 +0000
+Modify: 2025-06-22 04:00:26.149881186 +0000
+Change: 2025-06-22 04:00:26.149881186 +0000
+ Birth: 2025-06-22 04:00:26.149881186 +0000
+  File: ./docs/user-guides/WORKSPACE_ANALYZER_README.md
+  Size: 7176      	Blocks: 16         IO Block: 4096   regular file
+Device: 8,17	Inode: 274291      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.022895909 +0000
+Modify: 2025-06-22 04:00:26.149881186 +0000
+Change: 2025-06-22 04:00:26.149881186 +0000
+ Birth: 2025-06-22 04:00:26.149881186 +0000
+  File: ./docs/observations/README.md
+  Size: 1883      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,17	Inode: 274279      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.148881185 +0000
+Change: 2025-06-22 04:00:26.148881185 +0000
+ Birth: 2025-06-22 04:00:26.148881185 +0000
+  File: ./docs/observations/copilot_git_memory_hypothesis.md
+  Size: 19118     	Blocks: 40         IO Block: 4096   regular file
+Device: 8,17	Inode: 274281      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.148881185 +0000
+Change: 2025-06-22 04:00:26.148881185 +0000
+ Birth: 2025-06-22 04:00:26.148881185 +0000
+
+=== Empty Files Detection ===
+No empty files found
+
+=== Git Diff (Staged) ===
+
+=== Git Diff (Unstaged) ===
+
+=== Git Diff HEAD ===
+
+=== Working Directory File Count ===
+38
+
+=== Recently Modified Files (Last 10 minutes) ===
+./PROJECT_MANIFEST.md
+./TABLE_OF_CONTENTS.md
+./COMMUNITY_SURVEY.md
+./DISCLAIMER.md
+./README.md
+./.github/ISSUE_TEMPLATE/bug-report.md
+./.github/ISSUE_TEMPLATE/performance-report.md
+./.github/ISSUE_TEMPLATE/feature-request.md
+./REPOSITORY_ANALYSIS_AND_RECOMMENDATIONS.md
+./METRICS.md
+./IMPROVEMENTS_SUMMARY.md
+./VALIDATION_PROCESS.md
+./tools/test.py
+./tools/compare_folders.py
+./tools/workspace_analyzer_enhanced.py
+./tools/__init__.py
+./__init__.py
+./examples/workspace_analyzer_demo.py
+./INVESTIGATION_SUMMARY.md
+./docs/README.md
+./docs/validation-status/README.md
+./docs/theoretical-analysis/copilot_deep_theory.md
+./docs/theoretical-analysis/README.md
+./docs/theoretical-analysis/copilot_context_theory.md
+./docs/methodology/README.md
+./docs/user-guides/README.md
+./docs/user-guides/developer_guide_theory_to_practice.md
+./docs/user-guides/WORKSPACE_ANALYZER_README.md
+./docs/observations/README.md
+./docs/observations/copilot_git_memory_hypothesis.md
+./docs/observations/repository_size_breakthrough.md
+./docs/observations/analysis_results.md
+./docs/observations/final_analysis_next_steps.md
+./docs/observations/git_removal_analysis.md
+./CONTRIBUTING.md
+./EMPTY_FILE_INVESTIGATION.md
+./RELEASE_NOTES.md
+./FUTURE_ENHANCEMENT_SUGGESTIONS.md
+
+=== Git Index Status ===
+100644 603db1228808bf03ee23437d6773cda3b4fd8f6e 0	.github/ISSUE_TEMPLATE/bug-report.md
+100644 9445badcef7efeb2bc3481b14a16bb5a4e5a8476 0	.github/ISSUE_TEMPLATE/config.yml
+100644 a53830d2dbf8587b847d186c34066208d4e6c4b2 0	.github/ISSUE_TEMPLATE/feature-request.md
+100644 efba3951ec1f92329920fe2243ca83800bbfd3f7 0	.github/ISSUE_TEMPLATE/performance-report.md
+100644 8baf0f4cf43e0832c0a2f9693397b3c37564b4ed 0	.gitignore
+100644 bc6f80a45d007ae1a2af69a2110e9abbc41088a1 0	COMMUNITY_SURVEY.md
+100644 926502caa686276ce65c19ff5b25a3ace0d515ad 0	CONTRIBUTING.md
+100644 7b459c3d74c48a9e0566b920047e14366306bd6c 0	DISCLAIMER.md
+100644 59f40a897581caf77acddeb92e4ea693236fd172 0	EMPTY_FILE_INVESTIGATION.md
+100644 3ac084308e82535f7981f6e9b8fa50f086092629 0	FUTURE_ENHANCEMENT_SUGGESTIONS.md
+100644 e9a3cef185570cf280a52d071b7f4ac76d42468e 0	IMPROVEMENTS_SUMMARY.md
+100644 a0d0cbecf4fc0fe87ce35832576b98070df1d8a6 0	INVESTIGATION_SUMMARY.md
+100644 c1f17be72f026e26a70ea5443b50ed10b06d5f05 0	METRICS.md
+100644 1f23a7344157b48f277d46de37de3e0b188c3c6a 0	PROJECT_MANIFEST.md
+100644 cb896cccd94d2b8f92e2a7b8892eb6032ce136d2 0	README.md
+100644 5c6f6e6365ac139414158c95b5030b0b34f00e84 0	RELEASE_NOTES.md
+100644 83941e5738c063a4465512f4e8c43300b88e16fe 0	REPOSITORY_ANALYSIS_AND_RECOMMENDATIONS.md
+100644 514f27068b0ff4a9434c4444863733be3aa629f8 0	TABLE_OF_CONTENTS.md
+100644 86a744eda09c319bb8fc454949bb2ef13ab12674 0	VALIDATION_PROCESS.md
+100644 fb9eb03fe401d7a8d85368a442df905f146bc1b9 0	__init__.py
+
+=== Git Configuration ===
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=https://github.com/TriadFlowC/copilot-performance-toolkit
+remote.origin.fetch=+refs/heads/copilot/fix-15:refs/remotes/origin/copilot/fix-15
+branch.copilot/fix-15.remote=origin
+branch.copilot/fix-15.merge=refs/heads/copilot/fix-15
+credential.username=copilot-swe-agent[bot]
+credential.helper=!f() { test "$1" = get && echo "password=$GITHUB_TOKEN"; }; f
+user.email=198982749+Copilot@users.noreply.github.com
+user.name=copilot-swe-agent[bot]
+pull.rebase=false
+
+=== Directory Structure ===
+.
+./forensics
+./forensics/analysis
+./forensics/evidence_20250622_040150
+./.github
+./.github/ISSUE_TEMPLATE
+./tools
+./tools/monitoring
+./tools/monitoring/evidence_20250622_040200
+./tools/monitoring/evidence_20250622_040503
+./examples
+./docs
+./docs/validation-status
+./docs/theoretical-analysis
+./docs/methodology
+./docs/user-guides
+./docs/observations
+
+=== File Permissions ===
+-rw-r--r-- 1 runner docker   772 Jun 22 04:00 ./.github/ISSUE_TEMPLATE/bug-report.md
+-rw-r--r-- 1 runner docker  1051 Jun 22 04:00 ./.github/ISSUE_TEMPLATE/feature-request.md
+-rw-r--r-- 1 runner docker  1740 Jun 22 04:00 ./.github/ISSUE_TEMPLATE/performance-report.md
+-rw-r--r-- 1 runner docker  4702 Jun 22 04:00 ./COMMUNITY_SURVEY.md
+-rw-r--r-- 1 runner docker  2351 Jun 22 04:00 ./DISCLAIMER.md
+-rw-r--r-- 1 runner docker  2020 Jun 22 04:00 ./IMPROVEMENTS_SUMMARY.md
+-rw-r--r-- 1 runner docker  8586 Jun 22 04:00 ./INVESTIGATION_SUMMARY.md
+-rw-r--r-- 1 runner docker  7520 Jun 22 04:00 ./METRICS.md
+-rw-r--r-- 1 runner docker  9020 Jun 22 04:00 ./PROJECT_MANIFEST.md
+-rw-r--r-- 1 runner docker 10622 Jun 22 04:00 ./README.md
+-rw-r--r-- 1 runner docker  8656 Jun 22 04:00 ./REPOSITORY_ANALYSIS_AND_RECOMMENDATIONS.md
+-rw-r--r-- 1 runner docker  3529 Jun 22 04:00 ./TABLE_OF_CONTENTS.md
+-rw-r--r-- 1 runner docker  8438 Jun 22 04:00 ./VALIDATION_PROCESS.md
+-rw-r--r-- 1 runner docker   734 Jun 22 04:00 ./__init__.py
+-rw-r--r-- 1 runner docker  3517 Jun 22 04:00 ./docs/README.md
+-rw-r--r-- 1 runner docker  2690 Jun 22 04:00 ./examples/workspace_analyzer_demo.py
+-rw-r--r-- 1 runner docker   151 Jun 22 04:00 ./tools/__init__.py
+-rwxr-xr-x 1 runner docker  5196 Jun 22 04:00 ./tools/compare_folders.py
+-rwxr-xr-x 1 runner docker 94856 Jun 22 04:00 ./tools/test.py
+-rwxr-xr-x 1 runner docker 24824 Jun 22 04:00 ./tools/workspace_analyzer_enhanced.py
+

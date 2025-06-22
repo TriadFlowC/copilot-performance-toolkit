@@ -1,0 +1,43 @@
+=== Empty File Investigation Summary ===
+Timestamp: Sun Jun 22 04:06:50 UTC 2025
+Evidence Directory: /home/runner/work/copilot-performance-toolkit/copilot-performance-toolkit/tools/monitoring/evidence_20250622_040503
+
+=== Monitoring Duration ===
+Start: Timestamp: Sun Jun 22 04:05:03 UTC 2025
+End: Sun Jun 22 04:06:50 UTC 2025
+
+=== Files Generated ===
+total 180
+drwxr-xr-x 2 runner docker  4096 Jun 22 04:06 .
+drwxr-xr-x 4 runner docker  4096 Jun 22 04:06 ..
+-rw-r--r-- 1 runner docker  4358 Jun 22 04:05 baseline_files.txt
+-rw-r--r-- 1 runner docker   407 Jun 22 04:05 current_empty_files.txt
+-rw-r--r-- 1 runner docker  4358 Jun 22 04:05 current_files.txt
+-rw-r--r-- 1 runner docker   575 Jun 22 04:05 empty_file_alerts.log
+-rw-r--r-- 1 runner docker   377 Jun 22 04:05 extension_activity_tracker.log
+-rw-r--r-- 1 runner docker 15191 Jun 22 04:05 file_creation_monitor.log
+-rw-r--r-- 1 runner docker 19222 Jun 22 04:05 git_state_after_creation.txt
+-rw-r--r-- 1 runner docker 18921 Jun 22 04:05 git_state_before.txt
+-rw-r--r-- 1 runner docker   665 Jun 22 04:05 git_summary_after_creation.txt
+-rw-r--r-- 1 runner docker   443 Jun 22 04:05 git_summary_before.txt
+-rw-r--r-- 1 runner docker   352 Jun 22 04:06 investigation_summary.txt
+-rw-r--r-- 1 runner docker   407 Jun 22 04:05 last_empty_files.txt
+-rw-r--r-- 1 runner docker    10 Jun 22 04:06 last_processes.txt
+-rw-r--r-- 1 runner docker   659 Jun 22 04:05 master_monitor.log
+-rw-r--r-- 1 runner docker 19852 Jun 22 04:05 memory_usage.log
+-rw-r--r-- 1 runner docker    15 Jun 22 04:05 monitor_pids.txt
+-rw-r--r-- 1 runner docker 29597 Jun 22 04:05 process_activity_monitor.log
+
+=== Empty File Alerts ===
+[Sun Jun 22 04:05:27 UTC 2025] EMPTY FILE ALERT: /home/runner/work/copilot-performance-toolkit/copilot-performance-toolkit/compare_test.py
+[Sun Jun 22 04:05:27 UTC 2025] EMPTY FILE ALERT: /home/runner/work/copilot-performance-toolkit/copilot-performance-toolkit/copilot_context_theory.md
+[Sun Jun 22 04:05:27 UTC 2025] EMPTY FILE ALERT: /home/runner/work/copilot-performance-toolkit/copilot-performance-toolkit/test_empty.py
+[Sun Jun 22 04:05:27 UTC 2025] EMPTY FILE ALERT: /home/runner/work/copilot-performance-toolkit/copilot-performance-toolkit/workspace_analyzer_test.py
+
+=== Process Activity Summary ===
+🚨 [Sun Jun 22 04:05:33 UTC 2025] NEW EMPTY FILES DETECTED!
+
+=== Extension Activity Summary ===
+Starting Copilot activity monitoring...
+Starting Copilot activity monitoring
+

@@ -1,0 +1,15 @@
+=== Git State Summary: before ===
+Timestamp: Sun Jun 22 04:05:03 UTC 2025
+Repository: /home/runner/work/copilot-performance-toolkit/copilot-performance-toolkit
+
+Modified files:
+?? forensics/evidence_20250622_040150/
+?? tools/monitoring/evidence_20250622_040200/
+?? tools/monitoring/evidence_20250622_040503/
+?? tools/monitoring/evidence_package_20250622_040424.tar.gz
+
+Empty files:
+
+Total .md files: 32
+Total .py files: 6
+Total empty files: 0

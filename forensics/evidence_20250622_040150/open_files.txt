@@ -1,0 +1,64 @@
+=== Open Files Analysis ===
+Timestamp: Sun Jun 22 04:01:50 UTC 2025
+
+=== Processes with .md or .py files open ===
+--- Checking: ./PROJECT_MANIFEST.md ---
+No processes have ./PROJECT_MANIFEST.md open
+
+--- Checking: ./TABLE_OF_CONTENTS.md ---
+No processes have ./TABLE_OF_CONTENTS.md open
+
+--- Checking: ./COMMUNITY_SURVEY.md ---
+No processes have ./COMMUNITY_SURVEY.md open
+
+--- Checking: ./DISCLAIMER.md ---
+No processes have ./DISCLAIMER.md open
+
+--- Checking: ./README.md ---
+No processes have ./README.md open
+
+--- Checking: ./.github/ISSUE_TEMPLATE/bug-report.md ---
+No processes have ./.github/ISSUE_TEMPLATE/bug-report.md open
+
+--- Checking: ./.github/ISSUE_TEMPLATE/performance-report.md ---
+No processes have ./.github/ISSUE_TEMPLATE/performance-report.md open
+
+--- Checking: ./.github/ISSUE_TEMPLATE/feature-request.md ---
+No processes have ./.github/ISSUE_TEMPLATE/feature-request.md open
+
+--- Checking: ./REPOSITORY_ANALYSIS_AND_RECOMMENDATIONS.md ---
+No processes have ./REPOSITORY_ANALYSIS_AND_RECOMMENDATIONS.md open
+
+--- Checking: ./METRICS.md ---
+No processes have ./METRICS.md open
+
+--- Checking: ./IMPROVEMENTS_SUMMARY.md ---
+No processes have ./IMPROVEMENTS_SUMMARY.md open
+
+--- Checking: ./VALIDATION_PROCESS.md ---
+No processes have ./VALIDATION_PROCESS.md open
+
+--- Checking: ./tools/test.py ---
+No processes have ./tools/test.py open
+
+--- Checking: ./tools/compare_folders.py ---
+No processes have ./tools/compare_folders.py open
+
+--- Checking: ./tools/workspace_analyzer_enhanced.py ---
+No processes have ./tools/workspace_analyzer_enhanced.py open
+
+--- Checking: ./tools/__init__.py ---
+No processes have ./tools/__init__.py open
+
+--- Checking: ./__init__.py ---
+No processes have ./__init__.py open
+
+--- Checking: ./examples/workspace_analyzer_demo.py ---
+No processes have ./examples/workspace_analyzer_demo.py open
+
+--- Checking: ./INVESTIGATION_SUMMARY.md ---
+No processes have ./INVESTIGATION_SUMMARY.md open
+
+--- Checking: ./docs/README.md ---
+No processes have ./docs/README.md open
+

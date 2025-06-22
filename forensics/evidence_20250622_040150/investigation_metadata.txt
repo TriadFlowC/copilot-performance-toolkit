@@ -1,0 +1,24 @@
+=== Investigation Metadata ===
+Timestamp: Sun Jun 22 04:01:51 UTC 2025
+Investigator: Forensic Evidence Collector
+Repository: /home/runner/work/copilot-performance-toolkit/copilot-performance-toolkit
+Evidence Directory: /home/runner/work/copilot-performance-toolkit/copilot-performance-toolkit/forensics/evidence_20250622_040150
+
+=== Environment Information ===
+Operating System: Linux
+Kernel Version: 6.11.0-1015-azure
+Architecture: x86_64
+
+=== VS Code Information ===
+VS Code command not found in PATH
+
+=== Shell Information ===
+Shell: /bin/bash
+User: runner
+Home: /home/runner
+
+=== Investigation Scope ===
+Total .md files: 32
+Total .py files: 6
+Total empty files: 0
+

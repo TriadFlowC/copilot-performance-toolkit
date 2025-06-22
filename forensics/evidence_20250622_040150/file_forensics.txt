@@ -1,0 +1,385 @@
+=== File System Forensics ===
+Timestamp: Sun Jun 22 04:01:50 UTC 2025
+Repository: /home/runner/work/copilot-performance-toolkit/copilot-performance-toolkit
+
+=== All .md and .py files with detailed stat output ===
+--- File: ./PROJECT_MANIFEST.md ---
+  File: ./PROJECT_MANIFEST.md
+  Size: 9020      	Blocks: 24         IO Block: 4096   regular file
+Device: 8,17	Inode: 274267      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.148881185 +0000
+Change: 2025-06-22 04:00:26.148881185 +0000
+ Birth: 2025-06-22 04:00:26.148881185 +0000
+
+--- File: ./TABLE_OF_CONTENTS.md ---
+  File: ./TABLE_OF_CONTENTS.md
+  Size: 3529      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,17	Inode: 274271      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.148881185 +0000
+Change: 2025-06-22 04:00:26.148881185 +0000
+ Birth: 2025-06-22 04:00:26.148881185 +0000
+
+--- File: ./COMMUNITY_SURVEY.md ---
+  File: ./COMMUNITY_SURVEY.md
+  Size: 4702      	Blocks: 16         IO Block: 4096   regular file
+Device: 8,17	Inode: 274259      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.147881183 +0000
+Change: 2025-06-22 04:00:26.147881183 +0000
+ Birth: 2025-06-22 04:00:26.147881183 +0000
+
+--- File: ./DISCLAIMER.md ---
+  File: ./DISCLAIMER.md
+  Size: 2351      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,17	Inode: 274261      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.147881183 +0000
+Change: 2025-06-22 04:00:26.147881183 +0000
+ Birth: 2025-06-22 04:00:26.147881183 +0000
+
+--- File: ./README.md ---
+  File: ./README.md
+  Size: 10622     	Blocks: 24         IO Block: 4096   regular file
+Device: 8,17	Inode: 274268      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.148881185 +0000
+Change: 2025-06-22 04:00:26.148881185 +0000
+ Birth: 2025-06-22 04:00:26.148881185 +0000
+
+--- File: ./.github/ISSUE_TEMPLATE/bug-report.md ---
+  File: ./.github/ISSUE_TEMPLATE/bug-report.md
+  Size: 772       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,17	Inode: 274254      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.147881183 +0000
+Change: 2025-06-22 04:00:26.147881183 +0000
+ Birth: 2025-06-22 04:00:26.147881183 +0000
+
+--- File: ./.github/ISSUE_TEMPLATE/performance-report.md ---
+  File: ./.github/ISSUE_TEMPLATE/performance-report.md
+  Size: 1740      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,17	Inode: 274257      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.147881183 +0000
+Change: 2025-06-22 04:00:26.147881183 +0000
+ Birth: 2025-06-22 04:00:26.147881183 +0000
+
+--- File: ./.github/ISSUE_TEMPLATE/feature-request.md ---
+  File: ./.github/ISSUE_TEMPLATE/feature-request.md
+  Size: 1051      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,17	Inode: 274256      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.147881183 +0000
+Change: 2025-06-22 04:00:26.147881183 +0000
+ Birth: 2025-06-22 04:00:26.147881183 +0000
+
+--- File: ./REPOSITORY_ANALYSIS_AND_RECOMMENDATIONS.md ---
+  File: ./REPOSITORY_ANALYSIS_AND_RECOMMENDATIONS.md
+  Size: 8656      	Blocks: 24         IO Block: 4096   regular file
+Device: 8,17	Inode: 274270      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.148881185 +0000
+Change: 2025-06-22 04:00:26.148881185 +0000
+ Birth: 2025-06-22 04:00:26.148881185 +0000
+
+--- File: ./METRICS.md ---
+  File: ./METRICS.md
+  Size: 7520      	Blocks: 16         IO Block: 4096   regular file
+Device: 8,17	Inode: 274266      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.148881185 +0000
+Change: 2025-06-22 04:00:26.148881185 +0000
+ Birth: 2025-06-22 04:00:26.148881185 +0000
+
+--- File: ./IMPROVEMENTS_SUMMARY.md ---
+  File: ./IMPROVEMENTS_SUMMARY.md
+  Size: 2020      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,17	Inode: 274264      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.147881183 +0000
+Change: 2025-06-22 04:00:26.147881183 +0000
+ Birth: 2025-06-22 04:00:26.147881183 +0000
+
+--- File: ./VALIDATION_PROCESS.md ---
+  File: ./VALIDATION_PROCESS.md
+  Size: 8438      	Blocks: 24         IO Block: 4096   regular file
+Device: 8,17	Inode: 274272      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.148881185 +0000
+Change: 2025-06-22 04:00:26.148881185 +0000
+ Birth: 2025-06-22 04:00:26.148881185 +0000
+
+--- File: ./tools/test.py ---
+  File: ./tools/test.py
+  Size: 94856     	Blocks: 192        IO Block: 4096   regular file
+Device: 8,17	Inode: 274315      Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.022895909 +0000
+Modify: 2025-06-22 04:00:26.150881188 +0000
+Change: 2025-06-22 04:00:26.150881188 +0000
+ Birth: 2025-06-22 04:00:26.150881188 +0000
+
+--- File: ./tools/compare_folders.py ---
+  File: ./tools/compare_folders.py
+  Size: 5196      	Blocks: 16         IO Block: 4096   regular file
+Device: 8,17	Inode: 274304      Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.022895909 +0000
+Modify: 2025-06-22 04:00:26.150881188 +0000
+Change: 2025-06-22 04:00:26.150881188 +0000
+ Birth: 2025-06-22 04:00:26.150881188 +0000
+
+--- File: ./tools/workspace_analyzer_enhanced.py ---
+  File: ./tools/workspace_analyzer_enhanced.py
+  Size: 24824     	Blocks: 56         IO Block: 4096   regular file
+Device: 8,17	Inode: 274316      Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.022895909 +0000
+Modify: 2025-06-22 04:00:26.151881190 +0000
+Change: 2025-06-22 04:00:26.151881190 +0000
+ Birth: 2025-06-22 04:00:26.150881188 +0000
+
+--- File: ./tools/__init__.py ---
+  File: ./tools/__init__.py
+  Size: 151       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,17	Inode: 274303      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.022895909 +0000
+Modify: 2025-06-22 04:00:26.149881186 +0000
+Change: 2025-06-22 04:00:26.149881186 +0000
+ Birth: 2025-06-22 04:00:26.149881186 +0000
+
+--- File: ./__init__.py ---
+  File: ./__init__.py
+  Size: 734       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,17	Inode: 274273      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.148881185 +0000
+Change: 2025-06-22 04:00:26.148881185 +0000
+ Birth: 2025-06-22 04:00:26.148881185 +0000
+
+--- File: ./examples/workspace_analyzer_demo.py ---
+  File: ./examples/workspace_analyzer_demo.py
+  Size: 2690      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,17	Inode: 274296      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.022895909 +0000
+Modify: 2025-06-22 04:00:26.149881186 +0000
+Change: 2025-06-22 04:00:26.149881186 +0000
+ Birth: 2025-06-22 04:00:26.149881186 +0000
+
+--- File: ./INVESTIGATION_SUMMARY.md ---
+  File: ./INVESTIGATION_SUMMARY.md
+  Size: 8586      	Blocks: 24         IO Block: 4096   regular file
+Device: 8,17	Inode: 274265      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.148881185 +0000
+Change: 2025-06-22 04:00:26.148881185 +0000
+ Birth: 2025-06-22 04:00:26.147881183 +0000
+
+--- File: ./docs/README.md ---
+  File: ./docs/README.md
+  Size: 3517      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,17	Inode: 274275      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.148881185 +0000
+Change: 2025-06-22 04:00:26.148881185 +0000
+ Birth: 2025-06-22 04:00:26.148881185 +0000
+
+--- File: ./docs/validation-status/README.md ---
+  File: ./docs/validation-status/README.md
+  Size: 5339      	Blocks: 16         IO Block: 4096   regular file
+Device: 8,17	Inode: 274294      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.022895909 +0000
+Modify: 2025-06-22 04:00:26.149881186 +0000
+Change: 2025-06-22 04:00:26.149881186 +0000
+ Birth: 2025-06-22 04:00:26.149881186 +0000
+
+--- File: ./docs/theoretical-analysis/copilot_deep_theory.md ---
+  File: ./docs/theoretical-analysis/copilot_deep_theory.md
+  Size: 15055     	Blocks: 32         IO Block: 4096   regular file
+Device: 8,17	Inode: 274288      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.149881186 +0000
+Change: 2025-06-22 04:00:26.149881186 +0000
+ Birth: 2025-06-22 04:00:26.149881186 +0000
+
+--- File: ./docs/theoretical-analysis/README.md ---
+  File: ./docs/theoretical-analysis/README.md
+  Size: 1876      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,17	Inode: 274286      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.149881186 +0000
+Change: 2025-06-22 04:00:26.149881186 +0000
+ Birth: 2025-06-22 04:00:26.149881186 +0000
+
+--- File: ./docs/theoretical-analysis/copilot_context_theory.md ---
+  File: ./docs/theoretical-analysis/copilot_context_theory.md
+  Size: 11261     	Blocks: 24         IO Block: 4096   regular file
+Device: 8,17	Inode: 274287      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.149881186 +0000
+Change: 2025-06-22 04:00:26.149881186 +0000
+ Birth: 2025-06-22 04:00:26.149881186 +0000
+
+--- File: ./docs/methodology/README.md ---
+  File: ./docs/methodology/README.md
+  Size: 3743      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,17	Inode: 274277      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.148881185 +0000
+Change: 2025-06-22 04:00:26.148881185 +0000
+ Birth: 2025-06-22 04:00:26.148881185 +0000
+
+--- File: ./docs/user-guides/README.md ---
+  File: ./docs/user-guides/README.md
+  Size: 1146      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,17	Inode: 274290      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.022895909 +0000
+Modify: 2025-06-22 04:00:26.149881186 +0000
+Change: 2025-06-22 04:00:26.149881186 +0000
+ Birth: 2025-06-22 04:00:26.149881186 +0000
+
+--- File: ./docs/user-guides/developer_guide_theory_to_practice.md ---
+  File: ./docs/user-guides/developer_guide_theory_to_practice.md
+  Size: 13266     	Blocks: 32         IO Block: 4096   regular file
+Device: 8,17	Inode: 274292      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.022895909 +0000
+Modify: 2025-06-22 04:00:26.149881186 +0000
+Change: 2025-06-22 04:00:26.149881186 +0000
+ Birth: 2025-06-22 04:00:26.149881186 +0000
+
+--- File: ./docs/user-guides/WORKSPACE_ANALYZER_README.md ---
+  File: ./docs/user-guides/WORKSPACE_ANALYZER_README.md
+  Size: 7176      	Blocks: 16         IO Block: 4096   regular file
+Device: 8,17	Inode: 274291      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.022895909 +0000
+Modify: 2025-06-22 04:00:26.149881186 +0000
+Change: 2025-06-22 04:00:26.149881186 +0000
+ Birth: 2025-06-22 04:00:26.149881186 +0000
+
+--- File: ./docs/observations/README.md ---
+  File: ./docs/observations/README.md
+  Size: 1883      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,17	Inode: 274279      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.148881185 +0000
+Change: 2025-06-22 04:00:26.148881185 +0000
+ Birth: 2025-06-22 04:00:26.148881185 +0000
+
+--- File: ./docs/observations/copilot_git_memory_hypothesis.md ---
+  File: ./docs/observations/copilot_git_memory_hypothesis.md
+  Size: 19118     	Blocks: 40         IO Block: 4096   regular file
+Device: 8,17	Inode: 274281      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.148881185 +0000
+Change: 2025-06-22 04:00:26.148881185 +0000
+ Birth: 2025-06-22 04:00:26.148881185 +0000
+
+--- File: ./docs/observations/repository_size_breakthrough.md ---
+  File: ./docs/observations/repository_size_breakthrough.md
+  Size: 5205      	Blocks: 16         IO Block: 4096   regular file
+Device: 8,17	Inode: 274284      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.149881186 +0000
+Change: 2025-06-22 04:00:26.149881186 +0000
+ Birth: 2025-06-22 04:00:26.149881186 +0000
+
+--- File: ./docs/observations/analysis_results.md ---
+  File: ./docs/observations/analysis_results.md
+  Size: 6182      	Blocks: 16         IO Block: 4096   regular file
+Device: 8,17	Inode: 274280      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.148881185 +0000
+Change: 2025-06-22 04:00:26.148881185 +0000
+ Birth: 2025-06-22 04:00:26.148881185 +0000
+
+--- File: ./docs/observations/final_analysis_next_steps.md ---
+  File: ./docs/observations/final_analysis_next_steps.md
+  Size: 7016      	Blocks: 16         IO Block: 4096   regular file
+Device: 8,17	Inode: 274282      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.148881185 +0000
+Change: 2025-06-22 04:00:26.148881185 +0000
+ Birth: 2025-06-22 04:00:26.148881185 +0000
+
+--- File: ./docs/observations/git_removal_analysis.md ---
+  File: ./docs/observations/git_removal_analysis.md
+  Size: 6107      	Blocks: 16         IO Block: 4096   regular file
+Device: 8,17	Inode: 274283      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.149881186 +0000
+Change: 2025-06-22 04:00:26.149881186 +0000
+ Birth: 2025-06-22 04:00:26.149881186 +0000
+
+--- File: ./CONTRIBUTING.md ---
+  File: ./CONTRIBUTING.md
+  Size: 8192      	Blocks: 16         IO Block: 4096   regular file
+Device: 8,17	Inode: 274260      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.147881183 +0000
+Change: 2025-06-22 04:00:26.147881183 +0000
+ Birth: 2025-06-22 04:00:26.147881183 +0000
+
+--- File: ./EMPTY_FILE_INVESTIGATION.md ---
+  File: ./EMPTY_FILE_INVESTIGATION.md
+  Size: 8307      	Blocks: 24         IO Block: 4096   regular file
+Device: 8,17	Inode: 274262      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.147881183 +0000
+Change: 2025-06-22 04:00:26.147881183 +0000
+ Birth: 2025-06-22 04:00:26.147881183 +0000
+
+--- File: ./RELEASE_NOTES.md ---
+  File: ./RELEASE_NOTES.md
+  Size: 3930      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,17	Inode: 274269      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.148881185 +0000
+Change: 2025-06-22 04:00:26.148881185 +0000
+ Birth: 2025-06-22 04:00:26.148881185 +0000
+
+--- File: ./FUTURE_ENHANCEMENT_SUGGESTIONS.md ---
+  File: ./FUTURE_ENHANCEMENT_SUGGESTIONS.md
+  Size: 5412      	Blocks: 16         IO Block: 4096   regular file
+Device: 8,17	Inode: 274263      Links: 1
+Access: (0644/-rw-r--r--)  Uid: ( 1001/  runner)   Gid: (  118/  docker)
+Access: 2025-06-22 04:00:37.021895908 +0000
+Modify: 2025-06-22 04:00:26.147881183 +0000
+Change: 2025-06-22 04:00:26.147881183 +0000
+ Birth: 2025-06-22 04:00:26.147881183 +0000
+
