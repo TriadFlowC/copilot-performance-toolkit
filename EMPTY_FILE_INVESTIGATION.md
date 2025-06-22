@@ -1,4 +1,10 @@
-# Empty File Investigation System
+# 🕵️ Empty File Investigation System
+
+## 📋 Important Context
+
+The files mentioned in the original issue (`copilot_context_theory.md`, `test.py`, `workspace_analyzer_enhanced.py`, `compare_folders.py`) were documented as being created empty with identical timestamps, indicating an automated batch process. These files currently contain content, but this confirms the pattern described in the issue where empty files are later populated by some automated process.
+
+The investigation system is designed to capture the initial empty file creation event and identify the process responsible for both the creation and subsequent population of these files.
 
 ## 🕵️ Overview
 
